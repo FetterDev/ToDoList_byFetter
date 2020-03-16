@@ -132,12 +132,13 @@ a {
   color:white; /* Новый цвет текста */
  }
 .task{
-  width:85%;
+  width:90%;
   line-height: 28px;
   font-size: 20px;
   font-weight: 900;
   color: #8d80c8;
   margin: 0;
+  padding: 0;
 }
 
 button:hover {
@@ -165,7 +166,6 @@ button {
 .addItemPanel{
   display: block;
   text-align: center;
-  
 }
 
 .newTask{
@@ -173,11 +173,31 @@ button {
   background: white;
   border: none;
   padding:5px;
+  font-size: 15px;
+  color: #999;
 }
 
 
 .delete{
   position: absolute;
   right: 10px;
-  visibility: hidden;
+  padding-top: 6px;
+  opacity: 0;
+}
+
+.task:hover{
+  
+  border: lightblue solid 1px;
+  border-radius: 4px;
+  background-color: lavender;
+}
+
+.task:hover .delete {
+  opacity: 1;
+}
+
+.brdr{
+  border: lavender solid 1px;
+  border-radius: 5px;
+
 }
