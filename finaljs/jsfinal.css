@@ -1,0 +1,183 @@
+body{
+  margin: 0;
+}
+header{
+	font-family: 'Roboto Slab', serif;
+	color:#ffcc99;
+}
+ul{
+  list-style: none;
+}
+li{
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding: 2px 20px 2px 30px;
+  position: relative;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+
+
+.loginButton {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background:#ffcc99;
+  transition: 0.2s;
+}
+
+.loginButton:hover { 
+background: rgb(53, 167, 110); 
+color: white;
+}
+
+.loginButton:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.headerStyle{
+  min-height: 100px;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to bottom,#80a6c8 0,#5491c8 100%);
+
+} 
+@media (max-width: 430px){
+
+  .loginButton{
+    display: flex;
+    flex-direction: column;
+    padding: .3em 1em calc(.3em + 3px);
+    margin:10px; 
+  }
+}
+.backgroundChill{
+  
+  background-color: whitesmoke;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 1000px;
+  box-shadow: 0 4px 10px 2px rgba(90,90,90,0.4);
+  -moz-box-shadow: 0 4px 10px 2px rgba(90,90,90,0.4);
+  -webkit-box-shadow: 0 4px 10px 2px
+rgba(90,90,90,0.4);
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+}
+
+.backPic{
+  background-image:url(img/back.jpg);
+
+}
+
+.footerChill{
+  min-height: 100px ;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(107,156,200) ;
+  font-size: 19px;
+  box-shadow: 0 4px 10px 2px rgba(90,90,90,0.4);
+  color:#ffcc99;
+}
+a {
+  padding: 2px; /* Поля вокруг текста ссылки */
+  text-decoration: none; /* Убираем подчёркивание */
+ }
+ a:hover {
+  background: #999; /* Цвет фона при наведении на ссылку курсора */
+  color:white; /* Новый цвет текста */
+ }
+ .block-form-input{
+   width: 600px;
+   font-size: 18px;
+   font-weight: 900;
+   color: #8d80c8;
+   border-radius: 4px;
+ }
+ .logoFlex{
+  font-size:75px; 
+  font-family: 'Anton', sans-serif;
+ }
+
+.strTD{
+ padding-left: 170px;
+ color: #999;
+ font-size: 20px;
+ vertical-align: middle;
+ margin: 0;
+ font-weight: 100;
+}
+.addAct{
+
+  color: #ffcc99;
+}
+.addAct:hover {
+  background-color: rgb(107,156,200); /* Цвет фона при наведении на ссылку курсора */
+  color:white; /* Новый цвет текста */
+ }
+.task{
+  width:85%;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #8d80c8;
+  margin: 0;
+}
+
+button:hover {
+  color: 
+  #333;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.TT{
+    padding-top:50px;
+    color: #999;
+    padding-left: 140px;
+    margin: 0;
+    font-size: 35px;
+}
+.addItemPanel{
+  display: block;
+  text-align: center;
+  
+}
+
+.newTask{
+  width: 80%;
+  background: white;
+  border: none;
+  padding:5px;
+}
+
+
+.delete{
+  position: absolute;
+  right: 10px;
+  visibility: hidden;
+}
