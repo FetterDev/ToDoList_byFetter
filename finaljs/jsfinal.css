@@ -201,3 +201,14 @@ button {
   border-radius: 5px;
 
 }
+.spanCheker{
+  background: none;
+  border: none;
+  width: 90%;
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #8d80c8;
+  margin: 0;
+  padding: 0;
+}

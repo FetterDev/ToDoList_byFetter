@@ -12,32 +12,45 @@ let valueNewTask = function(){
        let createNewTaskElement = function(inpVl){
            let listElmement = document.createElement('li');
            let checkBox = document.createElement("input");
-           let spanElement = document.createElement("span");
+           let inputElement = document.createElement("input");
            let imgButElm = document.createElement("img");
            imgButElm.src = 'img/delete.gif'
            listElmement.classList.add("task");
+           inputElement.classList.add("spanCheker");
+           inputElement.addEventListener("dblclick",editBlock); 
            imgButElm.classList.add("delete");
-           spanElement.innerText =  inpVl;
+           inputElement.value =  inpVl;
            checkBox.type="checkbox";
            listElmement.appendChild(checkBox);
-           listElmement.appendChild(spanElement);
+           listElmement.appendChild(inputElement);
            listElmement.appendChild(imgButElm);
            return (listElmement);
        }
       const item = createNewTaskElement(inputValue);
       document.getElementById("ListUL").appendChild(item);
       document.getElementById('newToDo').value = "";
-      
+
       let close = document.querySelectorAll(".delete");
       function removeBlock() {
           this.parentNode.remove();
-          console.log(this.parentNode);
+      
       }
       close.forEach((item) => {
           item.addEventListener("click",removeBlock);
       });
+
+      function editBlock(event) {
+        event.currentTarget.disabled = false;
+        console.log("jopa");
+      }
+        
+
+
+
    }
    }
     });
   })();
 
+ 
+  
