@@ -27,15 +27,17 @@ let valueNewTask = function(){
       const item = createNewTaskElement(inputValue);
       document.getElementById("ListUL").appendChild(item);
       document.getElementById('newToDo').value = "";
+      
+      let close = document.querySelectorAll(".delete");
+      function removeBlock() {
+          this.parentNode.remove();
+          console.log(this.parentNode);
+      }
+      close.forEach((item) => {
+          item.addEventListener("click",removeBlock);
+      });
    }
    }
     });
   })();
 
-
-let  delListItem=function(){
-
-
-}
-    let deleteButs = document.querySelectorAll("delete");
-    document.querySelectorAll("delete").addEventListener('click',delListItem)
