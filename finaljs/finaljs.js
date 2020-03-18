@@ -21,6 +21,8 @@ let valueNewTask = function(){
            imgButElm.classList.add("delete");
            inputElement.value =  inpVl;
            checkBox.type="checkbox";
+           checkBox.addEventListener("click",chBox);
+           checkBox.classList.add("chBoxCheck");
            listElmement.appendChild(checkBox);
            listElmement.appendChild(inputElement);
            listElmement.appendChild(imgButElm);
@@ -41,16 +43,36 @@ let valueNewTask = function(){
 
       function editBlock(event) {
         event.currentTarget.disabled = false;
-        console.log("jopa");
       }
-        
+      function chBox(event){
+  
+        if (event.currentTarget.checked){
+       
+           
+            document.getElementById("doneTsk").appendChild(item);
+            
+            
+        }
+        else{
+            document.getElementById("listUl").appendChild(item);
+        }
+    }
+    
 
-
-
+      
    }
    }
     });
   })();
 
- 
-  
+ /*
+  let chBox = this.querySelectorAll(".chBoxCheker")
+  chBox.forEach((item) => { 
+      if (chBox.checked){
+          var cln = item.cloneNode(true);
+          document.getElementById("doneTsk").appendChild(item);
+      }
+  }
+*/
+
+   
