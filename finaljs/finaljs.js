@@ -49,6 +49,9 @@ let valueNewTask = function(){
         if (event.currentTarget.checked){
             document.getElementById("doneTsk").appendChild(item);
         }
+        else{
+            document.getElementById("ListUL").appendChild(item);
+        }
        
     }
     
@@ -59,14 +62,6 @@ let valueNewTask = function(){
     });
   })();
 
- /*
-  let chBox = this.querySelectorAll(".chBoxCheker")
-  chBox.forEach((item) => { 
-      if (chBox.checked){
-          var cln = item.cloneNode(true);
-          document.getElementById("doneTsk").appendChild(item);
-      }
-  }
-*/
+ 
 
    
