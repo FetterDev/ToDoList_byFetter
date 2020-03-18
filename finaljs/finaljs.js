@@ -47,15 +47,9 @@ let valueNewTask = function(){
       function chBox(event){
   
         if (event.currentTarget.checked){
-       
-           
             document.getElementById("doneTsk").appendChild(item);
-            
-            
         }
-        else{
-            document.getElementById("listUl").appendChild(item);
-        }
+       
     }
     
 
